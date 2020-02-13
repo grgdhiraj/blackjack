@@ -1,10 +1,14 @@
-
 <?php
+declare(strict_types=1);
+require "blackjack.php";
 session_start();
 
-$_SESSION['score'] = 0;
+
 
 ?>
+
+
+
 <!doctype html>
 <html lang="eng">
 <head>
@@ -17,8 +21,13 @@ $_SESSION['score'] = 0;
 <body>
 <h2>Are you ready to play?</h2>
 <img src="https://www.pinclipart.com/picdir/big/207-2074589_basic-blackjack-strategy-cartoon-blackjack-clipart.png" height="180px" alt="casino dealer">
-<form method="POST" action="game.php" >
-    <input type="submit" name="startGame" value="Click Here">
+<form method="POST" action="" >
+    <form class="form">
+        <div class="buttons">
+            <button type="submit" name="action" value="hit">Hit</button>
+            <button type="submit" name="action" value="stand">Stand</button>
+            <button type="submit" name="action" value="surrender">Surrender</button>
+        </div>
+    </form>
+    </div>
 </form>
-</body>
-</html>
