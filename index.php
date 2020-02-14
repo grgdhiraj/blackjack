@@ -1,9 +1,6 @@
 
 <?php
-session_start();
-
-$_SESSION['score'] = 0;
-
+require 'game.php';
 ?>
 <!doctype html>
 <html lang="eng">
@@ -15,10 +12,13 @@ $_SESSION['score'] = 0;
     <title>♠️Blackjack</title>
 </head>
 <body>
+
 <h2>Are you ready to play?</h2>
 <img src="https://www.pinclipart.com/picdir/big/207-2074589_basic-blackjack-strategy-cartoon-blackjack-clipart.png" height="180px" alt="casino dealer">
-<form method="POST" action="game.php" >
-    <input type="submit" name="startGame" value="Click Here">
+<form method="POST">
+    <button type="submit" name="action" value="hit">Hit</button>
+    <button type="submit" name="action" value="stand">Stand</button>
+    <button type="submit" name="action" value="surrender">Surrender</button>
 </form>
 </body>
 </html>
