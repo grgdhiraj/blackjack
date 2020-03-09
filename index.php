@@ -13,7 +13,7 @@ require 'game.php';
 </head>
 <body>
 
-<h2>Are you ready to play??</h2>
+<h2>Are you ready to play?</h2>
 <img src="https://www.pinclipart.com/picdir/big/207-2074589_basic-blackjack-strategy-cartoon-blackjack-clipart.png" height="180px" alt="casino dealer">
 <form method="POST">
     <button type="submit" name="action" value="hit">Hit</button>
